@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="book.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="/fontawesome-free-6.5.0-web/css/fontawesome.css"
+      rel="stylesheet"
+    /> -->
+<!-- 
+    <link href="/fontawesome-free-6.5.0-web/css/all.css" rel="stylesheet" />
+    <link href="/fontawesome-free-6.5.0-web/css/all.min.css" rel="stylesheet" /> -->
+
+    <title>booking Flights</title>
+  </head>
+  <body>
+    <main>
+      <!-- <div class="reload">
+        <div class="sercil"></div>
+        <p>loading</p>
+      </div> -->
+      <!-- <div class="header">
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <h1>logo</h1>
+            </div>
+            <ul>
+              <li>1</li>
+              <li>1</li>
+              <li>1</li>
+              <li>1</li>
+              <li>1</li>
+            </ul>
+          </nav>
+        </div>
+      </div> -->
+      <div class="content">
+        <div class="container">
+          <form action="index.php" method='POST'>
+            <div>
+              <h3>Passenger Info</h3>
+
+              <div class="name">
+              <div>
+                <label for="user_name">First Name</label>
+                <input type="text" name="user_name" id="user_name"   />
+                <p><?php echo $errors['fname']; ?></p>
+              </div>
+              <div>
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name"   />
+                <p><?php echo $errors['lname']; ?></p>
+              </div>
+              </div>
+              <h3>Contact Info</h3>
+              <div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email"  />
+                <p><?php echo $errors['email']; ?></p>
+              </div>
+              <div>
+                <label for="phone">Moblie Phone</label>
+                <input type="number" name="phone" id="phone"  />
+              </div>
+            </div>
+            <div style="grid-column: 1">
+              <h3>Passport Info</h3>
+              <div>
+                <label for="p_id">Passport id</label>
+                <input type="number" name="p_id" id="p_id" />
+                
+              </div>            
+              <div class="flight_info hiiden" style="display:none">
+
+              <label for="from">From</label>
+              <input type="text" class = "hidden"name="from" id="from"  />
+              <label for="to">TO</label>
+              <input type="text" name="to" id="to"  />
+              <label for="to">Check-in</label>
+              <input type="text" name="check_in" id="check_in"  />
+              <label for="check_out">Check-out</label>
+              <input type="text" name="check_out" id="check_out"  />
+              <label for="price">Price</label>
+              <input type="text" name="price" id="price" />
+            </div>
+
+            </div>
+            <div class="flight_info">
+              <h1>Jurney Info</h1>
+                <div>
+                  <p>From</p>
+                  <h3 class="depCity"></h3>
+                </div>
+                <div>
+                  <p>To</p>
+                  <h3 class="RetCity"></h3>
+                </div>
+                <div>
+                  <p>Check-in</p>
+                  <h3 class="goDate"></h3>
+                </div>
+                <div>
+                  <p>Check-out</p>
+                  <h3 class="returnDate"></h3>
+                </div>
+                <div>
+                  <p>Price</p>
+                  <h3 class="price"></h3>
+                </div>
+              </div>
+              <input type="submit" value="BOOK" name="submit" class="book" formaction="homea.html"/>
+          </form>
+        </div>
+      </div>
+    </main>
+    <section>
+      <p>Sucssesfuly Booked</p>
+      <img src="Check.png" alt="">
+    </section>
+    <script src="main.js"></script>
+    <script></script>
+  </body>
+</html>

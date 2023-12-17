@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="log.css" />
+  </head>
+  <body class="body">
+
+    <section class="wrapper">
+
+      <div class="form login">
+
+        <header class="loghead">Login</header>
+
+        <form method="post">
+
+          <div class="input">
+          <input name="email" type="text" placeholder="Email"  />
+          <!-- <span>E-mail</span> -->
+          <!-- <p><?php echo @$errors['email']; ?></p>     email-error-message -->
+          </div>
+          
+          <div class="input">
+          <input name="pass" type="password" placeholder="Password"  />
+          <!-- <span>Password</span> -->
+          
+          <!-- <p><?php echo @$errors['pass']; ?></p>      password-error-message -->
+          </div>
+
+          <div class="btns">
+          <input id="logbtn" type="submit" value="Login" name="submit1" formaction="homea.html"/>
+          <form  method="POST">
+          <input id="backbtn" type="submit" value="Back to Sign Up" name="back" formaction="sign.html" />
+        </form>
+          </div>
+          
+        </form>
+
+      </div>
+
+    </section>
+
+  </body>
+</html>
+

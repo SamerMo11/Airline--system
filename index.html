@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <title>Home Page</title>
+</head>
+<body>
+
+    <div class="header">
+
+        <img src="logo.png" alt="" id="logo">
+
+        <div class="nav" id="nav">
+          <a href="#">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#">CITIES</a>
+          <a href="#serv">SERVICES</a>
+        </div>
+
+        <div class="rside">
+        <a href="login.html" id="enter"><i class="fa-solid fa-right-to-bracket"></i>Enter</a>
+        <a href="sign.html" id="signup"><i class="fa-regular fa-user"></i>Sign Up</a>
+        <img src="open.png" alt="" id="open">
+        <img src="close.png" alt="" id="close">
+        </div>
+        <div class="toggle" onclick="togglemenu();"></div>
+      </div>
+<!-- --------------------------------------------------------------- -->
+
+      <div class="home">
+
+        <div class="main">
+
+          <!-- -----------------------Auto-Type-Code----------------------------- -->
+          <div class="hhead">
+          <p><span class="auto-type1"></span></p>
+          <p><span class="auto-type2"></span></p>
+          </div>
+
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+          <script>
+          var typed1 = new Typed(".auto-type1", {
+          strings: ['Find And Book'],
+          typeSpeed: 75,
+          backSpeed: 50,
+          loop: false,
+          })
+          var typed2= new Typed(".auto-type2", {
+          strings: [' A Great Experience'],
+          typeSpeed: 100,
+          backSpeed: 50,
+          loop: false,
+          })
+          </script>
+        </div>
+      </div>
+
+
+<script src="bootstrap.js"></script>
+<script src="project.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  font-family: "Manrope", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  position: relative;
+  /* background-color: var(--primary-color); */
+  background: url(mainback2.jpg);
+  /* background: #FAF9F6; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: brightness(0.8);
+}
+
+
+::selection{
+  color: #c0aca3;
+  background: var(--primary-color);
+}
+:root {
+  --primary-color: #1f1f1f;
+  /* --primary2-color: #1f212681; */
+  --primary2-color: #1f2126;
+  --primary2-color: #2c2c2c52;
+  --secondary-color: #ffffff;
+  /* --third-color: #0b8ea9; */
+  --third-color: #ff7259;
+  --fourth-color: #1f2126;
+  --fivth-color: #1f212681;
+
+  --standard-color: #cd7f32;
+  --premium-color: #c0c0c0;
+  --vip-color: #ffd700;
+}
+.reload {
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: #333;
+  inset: 0;
+  gap: 15px;
+  z-index: 8956369;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reload p {
+  font-size: 36px;
+  letter-spacing: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+.reload div {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  border-left: none;
+  animation: reload 1s linear infinite;
+}
+@keyframes reload {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+body > main > div.content > div > form > div:nth-child(1) > h3:nth-child(1){
+  position: relative;
+  background: #e8dacc87;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  width: 21%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px var(--primary-color);
+  /* text-align: center; */
+  margin-left: 40%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+/* body > main > div.content > div > form > div:nth-child(1) > h3:nth-child(1):hover{
+  background: #d55a53;
+  box-shadow: 0 0 10px var(--primary-color);
+} */
+
+
+
+body > main > div.content > div > form > div:nth-child(1) > h3:nth-child(4){
+  position: relative;
+  background: #e8dacc87;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  width: 21%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px var(--primary-color);
+  /* text-align: center; */
+  margin-left: 40%;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+
+/* body > main > div.content > div > form > div:nth-child(1) > h3:nth-child(4):hover{
+  background: #d55a53;
+  box-shadow: 0 0 10px var(--primary-color);
+} */
+body > main > div.content > div > form > div:nth-child(2) > h3{
+  position: relative;
+  background: #e8dacc87;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  width: 21%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px var(--primary-color);
+  /* text-align: center; */
+  margin-left: 40%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* body > main > div.content > div > form > div:nth-child(2) > h3:hover{
+  background: #d55a53;
+  box-shadow: 0 0 10px var(--primary-color);
+} */
+
+.name div p{
+  color: red;
+  margin-top: 10px;
+  margin-left: 45%;
+}
+body > main > div > div > form > div:nth-child(1) > div:nth-child(4) > p{
+  color: red;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .container {
+  padding: 2rem 3rem;
+
+  gap: 5px;
+}
+
+main nav {
+  display: flex;
+  justify-content: space-between;
+}
+main nav .logo {
+  flex: 1;
+}
+main nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  flex: 1;
+}
+main nav ul li {
+  list-style: none;
+}
+form {
+  /* padding: 15px 25px; */
+  padding: 0px 0px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+}
+form:not(:last-child) {
+  flex: 3;
+}
+.flight_info {
+  grid-column: 2;
+  grid-row: 1;
+}
+.flight_info input {
+  background-color: #00c2b7;
+  color: #fff;
+  border-radius: 5px;
+}
+form > div {
+  padding: 2rem 1.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* border-top: 2px solid transparent; */
+  /* border-bottom: 2px solid transparent; */
+  /* border-left: 2px solid #d55a53; */
+  /* border-right: 2px solid #d55a53; */
+  box-shadow: 0 0 10px var(--primary-color) ;
+  background-color:#e8dacc59;
+  border-radius: 15px;
+}
+
+
+body > main > div.content > div > form > div:nth-child(2){
+  padding: 2rem 1.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* border-left: 2px solid transparent; */
+  /* border-right: 2px solid transparent; */
+  /* border-top: 2px solid #d55a53; */
+  /* border-bottom: 2px solid #d55a53; */
+  box-shadow: 0 0 10px var(--primary-color);
+  background-color: #e8dacc59;
+  border-radius: 15px;
+  margin-top: 5%;
+}
+.name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form > div > div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+
+body > main > div > div > form > div:nth-child(1) > h3:nth-child(3){
+  position: relative;
+    background: #e8dacc87;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    width: 21%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--primary-color);
+    /* text-align: center; */
+    margin-left: 40%;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+form label {
+  width: 120px;
+  display: inline-block;
+  font-size: 18px;
+  color: var(--primary-color);
+  /* font-weight: 500; */
+  margin-left: 0%;
+}
+form input {
+  padding: 10px;
+  font-size: 22px;
+  outline: none;
+  color: var(--primary-color);
+  border-bottom: 2px solid transparent;
+  box-shadow: 0 0 3px var(--primary-color);
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  background: transparent;
+  border-radius: 25px;
+  background: #e7e0d340;
+  caret-color: #ffff;
+}
+
+
+
+body > main > div.content > div > form > input[type=submit]{
+  /* background: transparent;  */
+  border-left: 2px solid #e7e0d340;
+  border-right: 2px solid #e7e0d340;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  width: 150px;
+  height: 75px;
+  margin-left: 30%;
+  margin-top: 40%;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+}
+
+body > main > div.content > div > form > input[type=submit]:hover{
+  border-left: 2px solid #e7e0d340;
+  border-right: 2px solid #e7e0d340;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  background: #e8dacc59;
+  /* color: var(--primary-color); */
+}
+
+
+/* .flight_info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.flight_info h1{
+  text-align: center;
+  position: relative;
+  background: #e8dacc87;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+  width: 55%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px var(--primary-color);
+  transform: translateX(45%);
+
+  /* text-align: center; */
+  /* margin-left: 40%; */
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+.flight_info div h3{
+
+  color: var(--primary-color);
+  background: #e7e0d340;
+  /* border: 2px solid #eee; */
+  padding: 15px;
+  box-shadow: 0 0 3px var(--primary-color);
+  border-radius: 10px;
+
+}
+
+/* body > main > div.content > div > form > input[type=submit]::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+}
+body > main > div.content > div > form > input[type=submit]::before:hover{
+  width: 100%;
+} */
+
+/* body > main > div.content > div > form > input[type=submit]:hover{
+  background: #e8dacc; 
+  color: #d55a53;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+} */
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+
+@media (max-width:767px){
+
+body{
+  background-position: right;
+}
+
+
+  main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main{
+  width: 100%;
+}
+.container{
+  width: 100%;
+}
+
+main .container {
+  padding: 0rem 0rem;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+body > main > div.content > div > form > div:nth-child(1) > h3:nth-child(1) {
+  width: 80%;
+  margin-left: 0%;
+}
+
+body > main > div.content > div > form > div:nth-child(1) > h3:nth-child(4) {
+  width: 80%;
+  margin-left: 0%;
+
+}
+
+body > main > div.content > div > form > div:nth-child(2) > h3  {
+  width: 80%;
+  margin-left: 0%;
+
+}
+
+body > main > div.content > div > form > input[type=submit]{
+  margin-left: 0;
+  margin-top: 10%;
+}
+
+
+
+form {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  grid-template-columns: 3fr;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form > div{
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+}
+
+.name{
+  flex-direction: column;
+}
+
+
+body > main > div > div > form > div:nth-child(1) > h3:nth-child(3){
+  margin-left: 0;
+  width: 80%;
+}
+body > main > div > div > form > div:nth-child(1) > div.name > div:nth-child(1){
+  line-height: 30px;
+}
+body > main > div > div > form > div:nth-child(1) > div.name > div:nth-child(2){
+  line-height: 30px;
+}
+.flight_info h1{
+  transform: translateX(0);
+}
+
+.flight_info div h3{
+  padding: 20px 130px;
+}
+/* .flight_info{
+  align-items: normal;
+} */
+
+}
+
+
+
+/* body > main > div.content > div > form > input[type=submit]{
+  margin-top: 10%;
+  margin-left: 5%;
+} */
+
+
+
+section {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #c0c0c0;
+  gap: 10px;
+}
+section p {
+  font-size: 25px;
+  font-weight: 500;
+}
+section img {
+  width: 40px;
+}

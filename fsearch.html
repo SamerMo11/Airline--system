@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="search.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="/fontawesome-free-6.5.0-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+
+    <link href="/fontawesome-free-6.5.0-web/css/all.css" rel="stylesheet" />
+    <link href="/fontawesome-free-6.5.0-web/css/all.min.css" rel="stylesheet" />
+
+    <title>Search Flights</title>
+  </head>
+  <body>
+    <main>
+      <!-- <div class="reload">
+        <div class="sercil"></div>
+        <p>loading</p>
+      </div> -->
+
+      <!-- <div class="header">
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <h1>logo</h1>
+            </div>
+            <ul>
+              <li>1</li>
+              <li>1</li>
+              <li>1</li>
+              <li>1</li>
+              <li>1</li>
+            </ul>
+          </nav>
+        </div>
+      </div> -->
+      <div class="content">
+        <div class="container">
+          <!-- <div class="flight_chosen">
+            
+            <div class="go_ariport">
+              <p>Departuere Airport</p>
+              <p id="airport_chosen_go">CIA</p>
+            </div>
+            <div class="go_city">
+              <p>Departuere City</p>
+              <p id="city_chosen">Cairo</p>
+            </div>
+            <div class="return_ariport">
+              <p>Departuere Airport</p>
+              <p id="airport_chosen_return">CIA</p>
+            </div>
+            <div class="to_city">
+              <p>Arival City</p>
+              <p id="city_chosen">Los Anglos</p>
+            </div>
+
+            <div class="go_date">
+              <p>GoDate</p>
+              <p id="date">22-5-2024</p>
+            </div>
+            <div class="return_date">
+              <p>GoDate</p>
+              <p id="date">22-5-2024</p>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div> -->
+          <form action="">
+            <div>
+              <div>
+                <label for="">
+                  <img src="plan.svg" alt=""
+                /></label>
+                <input type="text" name="go_city" id="go_city" disabled />
+              </div>
+              <div>
+                <label for="">
+                  <img src="plan-down.svg" alt=""
+                /></label>
+                <input
+                  type="text"
+                  name="return_city"
+                  id="return_city"
+                  disabled
+                />
+              </div>
+              <div>
+                <p class="num_pass">1 Passengers</p>
+                <p>Economy</p>
+              </div>
+            </div>
+            <div>
+              <label for="departure"
+                ><i class="fa-solid fa-calendar-days"></i> Departure</label
+              >
+              <input type="text" name="departure" id="departure" disabled />
+            </div>
+            <div>
+              <label for="return"
+                ><i class="fa-solid fa-calendar-days"></i> Return</label
+              >
+              <input type="text" name="return" id="return" disabled />
+            </div>
+            <div class="search">
+              <a href="homea.html">Search Another Tickets</a>
+            </div>
+          </form>
+          <div class="results">
+            <p class="result_info"><span id="num"></span> Flight Found</p>
+            <div class="flights">
+              <div class="flight">
+                <div class="go">
+                  <div class="title">
+                    <img src="plan.svg" alt="" srcset="" />
+                    <p>Departure Flight</p>
+                  </div>
+                  <div class="departure_time">
+                    <p>22-5-2024</p>
+                    <p>Economy</p>
+                  </div>
+
+                  <div class="flight_det">
+                    <p class="go_city">Cairo <span>Egypt</span></p>
+                    <img src="plan_to.svg" alt="" />
+                    <p class="return_city">Cairo <span>Egypt</span></p>
+                  </div>
+                  <div class="duration">
+                    <p class="duration_time">
+                      14:50<i class="fa-solid fa-arrow-left"></i>
+                    </p>
+                    <p class="total_duration">
+                      15H 50M<i class="fa-solid fa-arrow-right fa-fw"></i>
+                    </p>
+                    <p class="duration_time">19:50</p>
+                  </div>
+                </div>
+                <div class="go return">
+                  <div class="title">
+                    <img src="plan-down.svg" alt="" srcset="" />
+                    <p>Arrival Flight</p>
+                  </div>
+                  <div class="departure_time">
+                    <p>22-5-2024</p>
+                    <p>Economy</p>
+                  </div>
+
+                  <div class="flight_det">
+                    <p class="go_city">Cairo <span>Egypt</span></p>
+                    <img src="plan_to.svg" alt="" />
+                    <p class="return_city">Cairo <span>Egypt</span></p>
+                  </div>
+                  <div class="duration">
+                    <p class="duration_time">
+                      14:50<i class="fa-solid fa-arrow-left"></i>
+                    </p>
+                    <p class="total_duration">
+                      15H 50M<i class="fa-solid fa-arrow-right fa-fw"></i>
+                    </p>
+                    <p class="duration_time">19:50</p>
+                  </div>
+                </div>
+                <div class="price_cont">
+                  <p>Total Price: <span id="price">$159</span></p>
+                  <a href="booking.html">Book Flight</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+    <script></script>
+  </body>
+</html>

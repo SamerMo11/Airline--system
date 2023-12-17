@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="homea.css">
+    <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+<body>
+    
+
+    <div class="header">
+        <!-- <a href="#" class="logo"><h1>Dream</h1></a> -->
+        <img src="logo.png" alt="" id="logo">
+        <div class="nav" id="nav">
+          <a href="#">HOME</a>
+          <a href="#about">ABOUT</a>
+          <!-- <a href="#serv">SERVICES</a> -->
+          <a href="city.html">CITIES</a>
+          <a href="#serv">SERVICES</a>
+        </div>
+        <div class="rside">
+          <!-- <a href="../log-in/login.php" id="enter"><i class="fa-solid fa-right-to-bracket"></i>Enter</a> -->
+
+
+
+
+
+<form action="homea.php" method='POST' >
+  <input id="signout" type="submit" name='sub' value='sign out' formaction="index.html">
+</form>
+
+
+
+
+
+
+        <img src="open.png" alt="" id="open">
+        <img src="close.png" alt="" id="close">
+        </div>
+        <!-- <div class="toggle" onclick="togglemenu();"></div> -->
+      </div>
+
+
+<img src="moon-done.png" alt="" id="moon">
+
+<img src="sun-done.png" alt="" id="sun">
+
+<a href="#home">
+    <svg xmlns="http://www.w3.org/2000/svg" id="arrow" class="arrow" viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+    </svg>
+  </a>
+<!-- --------------------------------------------------------------- -->
+
+      <div id="home" class="home">
+
+        <div class="main">
+        <p class="hello">Hello  <span> <?php echo @$_SESSION['name']; ?> ; )</span> </p>        
+
+          <div class="hhead">
+          <p><span class="auto-type1"></span></p>
+          <p><span class="auto-type2"></span></p>
+        </div>
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+          <script>
+          var typed1 = new Typed(".auto-type1", {
+          strings: ['Find And Book'],
+          typeSpeed: 75,
+          backSpeed: 50,
+          loop: false,
+          })
+          var typed2= new Typed(".auto-type2", {
+          strings: [' A Great Experience'],
+          typeSpeed: 100,
+          backSpeed: 50,
+          loop: false,
+          })
+          </script>
+        </div>
+
+        <form action="homea.php" class="form" method="post">
+          <div>
+            <label class="loc" for="location">LOCATION</label>
+            <input type="text" name="location" id="location" />
+  
+            <div name="aa" class="cities"></div>
+          </div>
+          <div class="date">
+            <div>
+              <div class="calender">
+                <div class="control">
+                  <h3 class="currdate">29 Novamber,2022</h3>
+                  <div>
+                    <img class="prev" src="arrow-right.svg" alt="" />
+                    <img class="next" src="arrow-right.svg" alt="" />
+                  </div>
+                </div>
+                <ul class="weaks">
+                  <li>Sun</li>
+                  <li>Mon</li>
+                  <li>Tue</li>
+                  <li>Wed</li>
+                  <li>Thu</li>
+                  <li>Fri</li>
+                  <li>Sat</li>
+                </ul>
+                <ul class="days"></ul>
+              </div>
+              <label for="chack-in">Check-in</label>
+              <input
+                type="text"
+                name="in"
+                id="chack-in"
+                class="check-in"
+                placeholder="15-10-2023"
+              />
+  
+              <p class="error"></p>
+            </div>
+            <div>
+
+              <label for="chack-out">Check-out</label>
+              <input
+                type="text"
+                class="check-out"
+                name="out"
+                id="chack-out"
+                placeholder="17-12-2023"
+              />
+              <p class="error"></p>
+            </div>
+          </div>
+          <div class="class">
+            <select name="class" id="class" required>
+              <option value="standard">Standard</option>
+              <option value="economy">Economy</option>
+              <option value="vip">VIP</option>
+            </select>
+          </div>
+          <input class="search" type="submit" value="Search" name="submit" formaction="fsearch.html"/>
+        </form>
+        <!-- <div class="book"> -->
+        <!-- <a href="../Cities/index.html" class="book-btn">Book Your Ticket Now!</a> -->
+        <!-- </div> -->
+        
+      </div>
+
+        <!-- <div class="book"> -->
+        <!-- <a href="../Cities/index.html" class="book-btn">Book Your Ticket Now!</a> -->
+        <!-- </div> -->
+        
+      </div>
+      
+
+      
+      
+      <!-- <img src="moon-done.png" alt="" id="moon">
+      <img src="sun-done.png" alt="" id="sun"> -->
+
+<!-- --------------------Services--------------------------------- -->
+<hr id="serv">
+
+<div class="serv " >
+  <!-- <div class="head"> -->
+    <a href="#serv" id="servh" class="reveal">Our Services</a>
+    <p class="para reveal">Here Are Our Plane Classes For You </p>
+  <!-- </div> -->
+
+
+  <div class="all-cols">
+
+
+<div class="col1 cols reveal">
+  
+  <div class="animation-btn1"><a href="#projects" class="btn1" id="projectbtn1">ECONOMY
+    <span></span><span></span><span></span><span></span></a></div>
+
+<p>
+  Economy class, also known as coach or standard class, is the most common seating option for air travelers. Positioned towards the rear of the plane, economy class offers a cost-effective way to fly. While the seats are more compact and legroom may be limited, airlines strive to provide a comfortable experience for passengers. In-flight entertainment systems are often available, offering a selection of movies, TV shows, and music. Additionally, passengers can enjoy complimentary meals or purchase snacks and beverages onboard. Economy class provides an accessible option for travelers who prioritize affordability without compromising their ability to reach their desired destinations efficiently and comfortably.
+</p>
+
+<img src="economy.jpeg" alt="">
+
+</div>
+
+
+
+<div class="col2 cols reveal2">
+  
+  <div class="animation-btn2"><a href="#projects" class="btn2" id="projectbtn2"> PREMIUM
+    <span></span><span></span><span></span><span></span></a></div>
+
+    <p>
+      Premium class, also known as business or first class, offers an elevated and luxurious travel experience in planes. Positioned towards the front of the aircraft, premium class provides passengers with enhanced comfort, spacious seating, and personalized service. Seats often recline into fully flat beds, allowing for a restful sleep during long-haul flights. Passengers in premium class are treated to refined dining options, with gourmet meals and a selection of fine wines. Additionally, exclusive lounges, expedited boarding, and dedicated check-in counters enhance the overall travel experience. With extra legroom, privacy, and attentive service, premium class ensures that travelers can enjoy a pampering journey and arrive at their destination.
+    </p>
+<img src="pre.jpg" alt="">
+
+
+</div>
+
+
+
+<div class="col3 cols reveal3">
+  
+  <div class="animation-btn3"><a href="#projects" class="btn3" id="projectbtn3"> VIP
+    <span></span><span></span><span></span><span></span></a></div>
+
+
+    <p>
+      VIP class in planes offers the epitome of luxury and exclusivity for discerning travelers. Reserved for high-profile individuals, celebrities, and dignitaries, VIP class provides an unparalleled level of comfort and personalized service. With private suites featuring spacious seating, fully flat beds, and exclusive amenities, passengers can enjoy utmost privacy and relaxation during their journey. VIP lounges offer a serene and opulent environment, complete with gourmet dining options and premium beverages. Dedicated VIP attendants cater to every need, ensuring a seamless and extraordinary travel experience. From expedited security checks to chauffeur services.   
+    </p> 
+
+<img src="vip.jpg" alt="">
+
+
+</div>
+</div>
+</div>
+ <!-- ------------------------About------------------------ -->
+ <hr id="about">
+
+
+ <section class="choose "> 
+  <div class="head reveal"> 
+    <h3>Why Choose Us?</h3> 
+    <p>These popular destinations have a lot to offer</p> 
+  </div> 
+  <div class="content reveal"> 
+    <div> 
+      <img src="1.svg" alt="" /> 
+      <h4>Best Price Guarantee</h4> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+    </div> 
+    <div> 
+      <img src="2.svg" alt="" /> 
+      <h4>Easy & Quick Booking</h4> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+    </div> 
+    <div> 
+      <img src="3.svg" alt="" /> 
+      <h4>Customer Care 24/7</h4> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+    </div> 
+  </div> 
+</section> 
+<section class="About reveal"> 
+  <div class="left"> 
+    <h2>About <span> Delta</span></h2> 
+    <p>These popular destinations have a lot to offer</p> 
+    <p> 
+      London is a shining example of a metropolis at the highest peak of 
+      modernity and boasts an economy and cultural diversity that’s the envy 
+      of other global superpowers 
+    </p> 
+    <p> 
+      Take the opportunity to acquaint yourself with its fascinating history 
+      chronicled by institutions like the British Museum as well as see how 
+      far it has come by simply riding the Tube and passing by celebrated 
+      landmarks like Buckingham Palace, Westminster Abbey, and marvels like 
+      Big Ben, the London Eye, and the Tower Bridge. 
+    </p> 
+  </div> 
+  <div class="right"> 
+    <img src="2.jpg" alt="" srcset="" /> 
+  </div> 
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <hr id="about"> -->
+<hr>
+
+ <!-- ------------------------footer------------------------ -->
+ <footer class="footer reveal">
+
+  <div class="all">
+      <div class="main">
+            <div class="col" id="company">
+                <img src="logo.png" alt="" class="logo">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consectetur laboriosam! Impedit dolor qui doloribus natus quia laboriosam odio eum.
+                </p>
+                <!-- <div class="social">
+                  <a target="_blank" href="https://github.com/SamerMo11"><i class="fab fa-github"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/samer-mohamed-5b2586280"><i class="fab fa-linkedin"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/profile.php?id=100083281736623&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                  <a target="_blank" href="https://wa.me/qr/DSRQF7O6GN4JL1"><i class="fab fa-whatsapp"></i></a>
+                  <a target="_blank" href="https://t.me/+201065849076"><i class="fab fa-telegram"></i></a>
+                  <a target="_blank" href="https://instagram.com/samer_mohamed96?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fab fa-instagram"></i></a>
+                </div> -->
+            </div>
+
+
+            <div class="coll" id="services">
+               <h3>Services</h3>
+               <div class="links">
+                  <a href="#serv">VIP Class</a>
+                  <a href="#serv">PREMIUM Class</a>
+                  <a href="#serv">STANARD Class</a>
+                  <!-- <a href="#services"></a> -->
+               </div>
+            </div>
+
+            <div class="coll" id="useful-links">
+               <h3>Links</h3>
+               <div class="links">
+                  <a href="#about">About</a>
+                  <a href="#serv">Services</a>
+                  <!-- <a href="#">Our Policy</a> -->
+                  <a href="#">Help</a>
+               </div>
+            </div>
+
+            <div class="team " id="useful-links">
+               <h3>Team Members</h3>
+               <div class="links">
+                  <a href="#">Samer Mohamed</a>
+                  <div class="first-row">
+                    <a href="#">Moamen Mohamed</a>
+                    <a href="#">Ibrahim Mohamed</a>
+                  
+                  </div>
+                  
+                  <div class="second-row">
+                    
+                    <a href="#">Ahmed Medhat</a>
+                    <a href="#">Tawfik Hashim</a>
+                  </div>
+                  
+                  <a href="#">Reem Tawfik</a>
+               </div>
+            </div>
+
+            <!-- <div class="col" id="contact-foot">
+                <h3>Contact</h3>
+                <div class="contact-details">
+                   <i class="fa fa-location"></i>
+                   <p>Damanhour, <br> BY, EGY</p>
+                </div><br>
+                <div class="contact-details">
+                   <i class="fa fa-phone"></i>
+                   <p>+20 1065849076</p>
+                </div>
+            </div> -->
+      </div>
+
+      <div class="row">
+            <!-- <div class="form">
+              <form action="">
+                  <input id="done2" type="email" placeholder="Email here...">
+                  <a id="done"><i  class="fa fa-paper-plane"></i></a>
+              </form>
+            </div> -->
+            <div class="copyright">
+            <p> CopyWright @ <span>Web Masters</span></p>
+          </div>
+      </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- --------------------------------------------------------------------- -->
+<script src="bootstrap.js"></script>
+<script src="main.js"></script>
+<script src="project.js"></script>
+
+<script type="text/javascript">
+
+let arr = document.getElementById('arrow');
+
+window.onscroll = function(){
+    if(scrollY >= 640)
+    {
+        arr.style.display ='block';
+    }else{
+        arr.style.display ='none';
+    }
+}
+
+
+  window.addEventListener('scroll',reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
+
+  for(var i = 0; i < reveals.length ; i++){
+
+    let windowheight = window.innerHeight;
+    let revealtop = reveals[i].getBoundingClientRect().top;
+    let revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('active');
+    }
+    else{
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+
+
+window.addEventListener('scroll',reveal2);
+
+function reveal2(){
+  var reveals2 = document.querySelectorAll('.reveal2');
+
+  for(var i = 0; i < reveals2.length ; i++){
+
+    let windowheight = window.innerHeight;
+    let revealtop = reveals2[i].getBoundingClientRect().top;
+    let revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint){
+      reveals2[i].classList.add('active');
+    }
+    else{
+      reveals2[i].classList.remove('active');
+    }
+  }
+}
+
+
+window.addEventListener('scroll',reveal3);
+
+function reveal3(){
+  var reveals3 = document.querySelectorAll('.reveal3');
+
+  for(var i = 0; i < reveals3.length ; i++){
+
+    let windowheight = window.innerHeight;
+    let revealtop = reveals3[i].getBoundingClientRect().top;
+    let revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint){
+      reveals3[i].classList.add('active');
+    }
+    else{
+      reveals3[i].classList.remove('active');
+    }
+  }
+}
+</script>
+
+
+
+</body>
+</html>
